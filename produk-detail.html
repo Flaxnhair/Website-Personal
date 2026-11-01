@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Detail produk UMKM Desa Tanjung Alai." />
+    <title>Detail Produk | UMKM Tanjung Alai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="produk-detail.css" />
+    <script src="supabase-config.js"></script>
+    <script src="umkm-store.js" defer></script>
+    <script src="produk-detail.js" defer></script>
+  </head>
+  <body>
+    <header class="product-header">
+      <a class="product-brand" href="index.html#umkm">
+        <span class="product-brand-mark">TA</span>
+        <span><strong>UMKM Tanjung Alai</strong><small>Produk lokal desa</small></span>
+      </a>
+      <a class="product-back" href="index.html#umkm">← Kembali ke katalog</a>
+    </header>
+    <main class="product-main">
+      <p class="product-status" id="productStatus" role="status">Memuat informasi produk...</p>
+      <article class="product-detail" id="productDetail" hidden>
+        <div class="product-image-wrap">
+          <img id="productImage" alt="" />
+          <div class="product-image-placeholder" id="productImagePlaceholder" hidden>TA</div>
+        </div>
+        <div class="product-copy">
+          <span class="product-category" id="productCategory"></span>
+          <h1 id="productName"></h1>
+          <p class="product-price" id="productPrice"></p>
+          <p class="product-stock" id="productStock"></p>
+          <div class="product-description" id="productDescription"></div>
+          <p class="product-seller-contact" id="productSellerContact"></p>
+          <section class="product-delivery" aria-labelledby="productDeliveryTitle">
+            <h2 id="productDeliveryTitle">Pengiriman & pengambilan</h2>
+            <p id="productDelivery"></p>
+          </section>
+          <div class="product-order">
+            <label for="productQuantity">Jumlah</label>
+            <input id="productQuantity" type="number" min="1" value="1" inputmode="numeric" />
+            <button class="product-button product-add-button" id="productAddButton" type="button">Tambah ke keranjang</button>
+          </div>
+          <p class="product-feedback" id="productFeedback" aria-live="polite"></p>
+        </div>
+      </article>
+      <section class="product-cart" aria-labelledby="detailCartTitle">
+        <div class="product-cart-heading">
+          <div>
+            <p class="product-kicker">Pesanan Anda</p>
+            <h2 id="detailCartTitle">Keranjang belanja</h2>
+          </div>
+          <strong id="detailCartTotal">Rp0</strong>
+        </div>
+        <div id="detailCartItems"></div>
+        <label class="buyer-name-label" for="detailBuyerName">Nama pemesan</label>
+        <input id="detailBuyerName" type="text" maxlength="80" autocomplete="name" placeholder="Nama Anda" />
+        <label class="buyer-notes-label" for="detailBuyerNotes">Catatan pesanan (opsional)</label>
+        <textarea id="detailBuyerNotes" rows="3" maxlength="240" placeholder="Alamat, jumlah, atau permintaan khusus"></textarea>
+        <p id="detailCheckoutStatus" class="checkout-status" aria-live="polite"></p>
+        <button class="product-button checkout-button" id="detailCheckoutButton" type="button" disabled>Checkout melalui WhatsApp</button>
+      </section>
+    </main>
+    <footer class="product-footer">
+      <a href="index.html#umkm">Desa Tanjung Alai</a>
+      <span>Harga dan ketersediaan dapat dikonfirmasi langsung kepada penjual.</span>
+    </footer>
+  </body>
+</html>

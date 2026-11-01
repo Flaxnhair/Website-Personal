@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Profil potensi dan destinasi wisata Desa Tanjung Alai, Kecamatan Koto Kampar XIII." />
+    <title>Tanjung Alai | Ruang Pulang di Kampar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#beranda" aria-label="Tanjung Alai beranda">
+        <span class="brand-mark">TA</span>
+        <span><strong>Tanjung Alai</strong><small>Koto Kampar XIII</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a class="active" href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#potensi">Potensi</a>
+        <a href="#wisata">Wisata</a>
+        <a href="#umkm">UMKM</a>
+        <a href="#kunjungi">Kunjungi</a>
+      </nav>
+      <a class="header-cta" href="#kunjungi">Jelajahi desa <span>↗</span></a>
+      <button class="admin-login-btn" type="button" aria-label="Login admin">Login Admin</button>
+    </header>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Kabupaten Kampar, Riau</p>
+          <h1>Ruang pulang<br /><em>yang mengalir.</em></h1>
+          <p class="hero-description">Temukan lanskap sungai, keramahan warga, dan potensi lokal yang tumbuh bersama alam di Desa Tanjung Alai.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#wisata">Mulai menjelajah <span>↓</span></a>
+            <a class="text-link" href="#potensi">Kenali potensinya <span>→</span></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image image-fallback" role="img" aria-label="Pemandangan sungai dan perbukitan hijau di Kampar"></div>
+          <div class="location-tag"><span class="pin">●</span><div><small>Anda berada di</small><strong>Desa Tanjung Alai</strong></div></div>
+          <div class="image-note">Alam yang dekat,<br /><strong>cerita yang lekat.</strong></div>
+        </div>
+      </section>
+
+      <section class="profile-section" id="profil">
+        <div class="profile-media">
+          <div class="profile-image" role="img" aria-label="Pemandangan alam dan rumah warga Desa Tanjung Alai"></div>
+          <div class="profile-badge">
+            <span>Sejak</span>
+            <strong id="desaYear">1994</strong>
+            <small id="desaMotto">Dari desa lama yang tenggelam oleh kenangan, bangkit menjadi mutira wisata kampar yang menawan</small>
+          </div>
+        </div>
+        <div class="profile-content">
+          <p class="eyebrow"><span></span> Profil Desa</p>
+          <h2>Desa Tanjung Alai,<br /><em>tenang di tepi alam, hangat di hati penduduk.</em></h2>
+          <p>Desa Tanjung Alai terletak di kawasan Kampar yang dikenal dengan bentangan alam hijau, sungai, dan keramahan masyarakat. Kehidupan desa tumbuh dari gotong royong, keseharian yang dekat dengan tanah, serta kearifan lokal yang terus dijaga.</p>
+          <div class="profile-list" aria-label="Statistik desa">
+            <div class="profile-stat"><strong id="populationValue">1.200+</strong><span>Penduduk</span></div>
+            <div class="profile-stat"><strong id="tourismValue">3</strong><span>Wisata unggulan</span></div>
+            <div class="profile-stat"><strong id="localValue">100%</strong><span>Potensi lokal</span></div>
+          </div>
+          <div class="profile-points">
+            <div><span class="point-dot"></span> Dikelola dengan semangat gotong royong</div>
+            <div><span class="point-dot"></span> Menggabungkan alam, budaya, dan ekonomi lokal</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-details" aria-label="Visi, misi, dan sejarah desa">
+        <article class="profile-detail-card">
+          <span class="profile-detail-number">01 / ARAH DESA</span>
+          <h2>Visi Desa</h2>
+          <p id="desaVision">Visi desa belum ditambahkan. Silakan lengkapi melalui panel admin.</p>
+        </article>
+        <article class="profile-detail-card">
+          <span class="profile-detail-number">02 / LANGKAH BERSAMA</span>
+          <h2>Misi Desa</h2>
+          <ul id="desaMission"><li>Misi desa belum ditambahkan. Silakan lengkapi melalui panel admin.</li></ul>
+        </article>
+        <article class="profile-detail-card history-card">
+          <span class="profile-detail-number">03 / JEJAK PERJALANAN</span>
+          <h2>Sejarah Desa</h2>
+          <p id="desaHistory">Sejarah desa belum ditambahkan. Silakan lengkapi melalui panel admin.</p>
+        </article>
+      </section>
+
+      <section class="village-structure" aria-labelledby="struktur-desa-title">
+        <div class="section-kicker"><span>02</span><span class="line"></span><span>STRUKTUR DESA</span></div>
+        <div class="structure-header">
+          <h2 id="struktur-desa-title">Pemerintahan dan<br /><em>pelayanan desa</em></h2>
+          <p>Pelayanan masyarakat berjalan dengan struktur yang jelas, menjaga roda desa tetap tertata dan responsif terhadap kebutuhan warga.</p>
+        </div>
+        <div class="structure-grid" id="structureGrid"></div>
+      </section>
+
+      <section class="population-administration" aria-labelledby="populationAdministrationTitle">
+        <div class="section-kicker"><span>03</span><span class="line"></span><span>DATA KEPENDUDUKAN</span></div>
+        <div class="population-heading">
+          <div>
+            <h2 id="populationAdministrationTitle">Administrasi<br /><em>penduduk desa</em></h2>
+          </div>
+          <p>Ringkasan data kependudukan Desa Tanjung Alai.</p>
+        </div>
+        <div class="population-grid" aria-live="polite">
+          <article class="population-card population-card-featured">
+            <span class="population-label">Jumlah penduduk</span>
+            <strong data-population-stat="total">Belum diisi</strong>
+            <span class="population-unit">jiwa</span>
+          </article>
+          <article class="population-card">
+            <span class="population-label">Penduduk laki-laki</span>
+            <strong data-population-stat="male">Belum diisi</strong>
+            <span class="population-unit">jiwa</span>
+          </article>
+          <article class="population-card">
+            <span class="population-label">Penduduk perempuan</span>
+            <strong data-population-stat="female">Belum diisi</strong>
+            <span class="population-unit">jiwa</span>
+          </article>
+          <article class="population-card">
+            <span class="population-label">Kepala keluarga</span>
+            <strong data-population-stat="households">Belum diisi</strong>
+            <span class="population-unit">kepala keluarga</span>
+          </article>
+          <article class="population-card">
+            <span class="population-label">Penduduk mutasi</span>
+            <strong data-population-stat="mutations">Belum diisi</strong>
+            <span class="population-unit">jiwa</span>
+          </article>
+          <article class="population-card">
+            <span class="population-label">Penduduk sementara</span>
+            <strong data-population-stat="temporary">Belum diisi</strong>
+            <span class="population-unit">jiwa</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="apbd-section" aria-labelledby="apbdTitle">
+        <div class="section-kicker"><span>04</span><span class="line"></span><span>KEUANGAN DESA</span></div>
+        <div class="population-heading">
+          <div>
+            <h2 id="apbdTitle">APBD<br /><em>Desa</em></h2>
+          </div>
+          <p>Ringkasan pendapatan dan belanja Desa Tanjung Alai.</p>
+        </div>
+        <div class="apbd-grid" aria-live="polite">
+          <article class="apbd-card apbd-card-income">
+            <span class="apbd-label">Pendapatan Desa</span>
+            <strong data-apbd="income">Belum diisi</strong>
+          </article>
+          <article class="apbd-card apbd-card-expense">
+            <span class="apbd-label">Belanja Desa</span>
+            <strong data-apbd="expenditure">Belum diisi</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="village-news" aria-labelledby="villageNewsTitle">
+        <div class="section-kicker"><span>05</span><span class="line"></span><span>KABAR DESA</span></div>
+        <div class="news-heading">
+          <div>
+            <h2 id="villageNewsTitle">Berita<br /><em>Desa</em></h2>
+          </div>
+          <p>Ikuti kabar, kegiatan, dan informasi terbaru dari Desa Tanjung Alai.</p>
+        </div>
+        <div class="news-grid" id="newsGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="intro-band" id="potensi">
+        <div class="section-kicker"><span>01</span><span class="line"></span><span>POTENSI DESA</span></div>
+        <div class="intro-grid">
+          <h2>Dari tanah yang subur,<br /><em>lahir banyak kemungkinan.</em></h2>
+          <div><p>Desa Tanjung Alai menyimpan kekuatan pada alam dan manusianya. Di sini, potensi bukan sekadar sumber daya, tetapi cara warga menjaga kehidupan tetap berjalan seimbang.</p><a class="text-link dark" href="#kunjungi">Cerita selengkapnya <span>→</span></a></div>
+        </div>
+        <div class="potential-grid">
+          <article class="potential-card featured"><div class="card-icon">✦</div><span class="card-number">01</span><h3>Wisata<br />Religi</h3><p>Ziarah ke maqam mursyid thariqat Naqsyabandiyah Syekh H. Abdurrahman bin Paduko Lakmano, tempat yang penuh makna spiritual dan sejarah.</p><a class="potential-open" href="wisata-detail.html?kategori=religi" target="_blank" rel="noopener">Jelajahi wisata religi <span aria-hidden="true">→</span></a></article>
+          <article class="potential-card"><div class="card-icon">◌</div><span class="card-number">02</span><h3>Wisata Alam<br />Gulamo</h3><p>Pesona alam terbuka, sungai, dan pemandangan hijau yang menenangkan di kawasan Gulamo.</p><a class="potential-open" href="wisata-detail.html?kategori=alam" target="_blank" rel="noopener">Jelajahi wisata alam <span aria-hidden="true">→</span></a></article>
+          <article class="potential-card"><div class="card-icon">✧</div><span class="card-number">03</span><h3>Wisata<br />Kuliner</h3><p>Rasa khas lokal dengan cita rasa yang menggoda dan membawa pengalaman desa lebih hidup.</p><a class="potential-open" href="wisata-detail.html?kategori=kuliner" target="_blank" rel="noopener">Jelajahi wisata kuliner <span aria-hidden="true">→</span></a></article>
+        </div>
+      </section>
+
+      <section class="destinations" id="wisata">
+        <div class="section-kicker light"><span>02</span><span class="line"></span><span>LOKASI WISATA</span></div>
+        <div class="destination-heading"><div><h2>Singgah sebentar,<br /><em>ingat lebih lama.</em></h2></div><p>Tiga pilihan untuk mengenal potensi Tanjung Alai: wisata religi, alam Gulamo, dan kuliner lokal.</p></div>
+        <div class="filter-tabs" role="tablist" aria-label="Filter destinasi wisata"><button class="filter active" data-filter="all">Semua</button><button class="filter" data-filter="religi">Wisata Religi</button><button class="filter" data-filter="alam">Wisata Alam</button><button class="filter" data-filter="kuliner">Wisata Kuliner</button></div>
+        <div class="destination-grid" id="destinationGrid"></div>
+      </section>
+
+      <section class="photo-gallery" aria-labelledby="photoGalleryTitle">
+        <div class="section-kicker"><span>03</span><span class="line"></span><span>GALERI DESA</span></div>
+        <div class="gallery-heading"><h2 id="photoGalleryTitle">Momen dari<br /><em>Tanjung Alai.</em></h2><p>Potret suasana dan cerita Desa Tanjung Alai.</p></div>
+        <div class="photo-grid" id="photoGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="umkm-section" id="umkm" aria-labelledby="umkmTitle">
+        <div class="section-kicker"><span>04</span><span class="line"></span><span>PRODUK LOKAL</span></div>
+        <div class="umkm-heading">
+          <div>
+            <h2 id="umkmTitle">Belanja Produk<br /><em>UMKM Tanjung Alai.</em></h2>
+          </div>
+          <p>Dukung usaha warga dengan mengenal dan membeli produk lokal desa.</p>
+        </div>
+        <p class="umkm-status" id="umkmStatus" role="status">Memuat produk UMKM...</p>
+        <div class="umkm-grid" id="umkmGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="visit-section" id="kunjungi"><div class="visit-content"><p class="eyebrow"><span></span> Rencanakan perjalanan</p><h2>Datang sebagai tamu,<br /><em>pulang sebagai cerita.</em></h2><p>Jaga alam, hormati budaya, dan beri ruang bagi desa untuk terus tumbuh. Tanjung Alai selalu punya alasan untuk dikunjungi kembali.</p><a class="button button-light" href="https://www.google.com/maps/search/Desa+Tanjung+Alai+Koto+Kampar+XIII" target="_blank" rel="noreferrer">Buka lokasi di peta <span>↗</span></a></div><div class="visit-mark">TA<span>↗</span></div></section>
+    </main>
+
+    <dialog class="news-detail-dialog" id="newsDetailDialog" aria-labelledby="newsDetailTitle">
+      <div class="news-detail-panel">
+        <button class="news-detail-close" type="button" aria-label="Tutup detail berita">×</button>
+        <img class="news-detail-image" id="newsDetailImage" alt="" hidden />
+        <div class="news-detail-copy">
+          <time class="news-detail-date" id="newsDetailDate"></time>
+          <h2 id="newsDetailTitle"></h2>
+          <div class="news-detail-content" id="newsDetailContent"></div>
+        </div>
+      </div>
+    </dialog>
+
+    <section class="village-info" aria-label="Informasi dan kontak Desa Tanjung Alai">
+      <div class="village-info-heading">
+        <p class="eyebrow"><span></span> Informasi Desa</p>
+        <h2>Terhubung dengan<br /><em>Tanjung Alai.</em></h2>
+      </div>
+      <div class="village-info-grid">
+        <article class="village-info-card visit-counter-card">
+          <span class="info-label">Kunjungan Website</span>
+          <strong id="websiteVisitCount">0</strong>
+          <p>Jumlah kunjungan yang tercatat pada browser ini.</p>
+        </article>
+        <article class="village-info-card">
+          <h3>Kontak Desa</h3>
+          <div id="villageContact" class="info-content"></div>
+        </article>
+        <article class="village-info-card">
+          <h3>Nomor Telepon Penting</h3>
+          <div id="importantPhones" class="info-link-list"></div>
+        </article>
+        <article class="village-info-card">
+          <h3>Sosial Media Desa</h3>
+          <div id="villageSocialMedia" class="info-link-list"></div>
+        </article>
+      </div>
+    </section>
+
+    <div class="admin-modal hidden" id="adminModal" aria-modal="true" role="dialog" aria-labelledby="adminTitle">
+      <div class="admin-panel">
+        <button class="close-admin" type="button" aria-label="Tutup panel admin">✕</button>
+        <div class="admin-login-view" id="adminLoginView">
+          <h2 id="adminTitle">Login Admin</h2>
+          <p>Kelola profil desa, struktur, dan destinasi wisata.</p>
+          <form id="adminLoginForm">
+            <label>
+              <span>Username</span>
+              <input type="text" name="username" value="admin" required />
+            </label>
+            <label>
+              <span>Password</span>
+              <input type="password" name="password" value="admin123" required />
+            </label>
+            <button type="submit" class="button button-primary admin-submit">Masuk</button>
+          </form>
+        </div>
+
+        <div class="admin-dashboard hidden" id="adminDashboard">
+          <h2>Panel Admin</h2>
+          <div class="admin-section">
+            <h3>Profil Desa</h3>
+            <div class="admin-form-grid">
+              <label>
+                <span>Tahun berdiri</span>
+                <input type="text" id="adminYear" />
+              </label>
+              <label>
+                <span>Jumlah penduduk</span>
+                <input type="text" id="adminPopulation" />
+              </label>
+              <label>
+                <span>Wisata unggulan</span>
+                <input type="text" id="adminTourism" />
+              </label>
+              <label>
+                <span>Potensi lokal</span>
+                <input type="text" id="adminLocal" />
+              </label>
+              <label class="full-width">
+                <span>Deskripsi berdiri desa</span>
+                <textarea id="adminMotto" rows="3"></textarea>
+              </label>
+              <label class="full-width">
+                <span>Visi desa</span>
+                <textarea id="adminVision" rows="3" placeholder="Tuliskan visi resmi Desa Tanjung Alai"></textarea>
+              </label>
+              <label class="full-width">
+                <span>Misi desa (satu poin per baris)</span>
+                <textarea id="adminMission" rows="5" placeholder="Tuliskan satu poin misi per baris"></textarea>
+              </label>
+              <label class="full-width">
+                <span>Sejarah desa</span>
+                <textarea id="adminHistory" rows="5" placeholder="Tuliskan sejarah Desa Tanjung Alai"></textarea>
+              </label>
+            </div>
+            <div class="population-admin-fields">
+              <h4>Administrasi Penduduk</h4>
+              <p>Isi angka sesuai data terbaru desa. Kosongkan jika data belum tersedia.</p>
+              <div class="admin-form-grid">
+                <label>
+                  <span>Jumlah penduduk</span>
+                  <input type="text" id="adminPopulationTotal" inputmode="numeric" placeholder="Contoh: 1.200" />
+                </label>
+                <label>
+                  <span>Jumlah penduduk laki-laki</span>
+                  <input type="text" id="adminPopulationMale" inputmode="numeric" placeholder="Contoh: 620" />
+                </label>
+                <label>
+                  <span>Jumlah penduduk perempuan</span>
+                  <input type="text" id="adminPopulationFemale" inputmode="numeric" placeholder="Contoh: 580" />
+                </label>
+                <label>
+                  <span>Jumlah kepala keluarga</span>
+                  <input type="text" id="adminHouseholds" inputmode="numeric" placeholder="Contoh: 320" />
+                </label>
+                <label>
+                  <span>Jumlah penduduk mutasi</span>
+                  <input type="text" id="adminPopulationMutations" inputmode="numeric" placeholder="Contoh: 12" />
+                </label>
+                <label>
+                  <span>Jumlah penduduk sementara</span>
+                  <input type="text" id="adminTemporaryPopulation" inputmode="numeric" placeholder="Contoh: 8" />
+                </label>
+              </div>
+            </div>
+            <div class="population-admin-fields apbd-admin-fields">
+              <h4>APBD Desa</h4>
+              <p>Isi nominal sesuai APBD desa yang berlaku. Kosongkan jika data belum tersedia.</p>
+              <div class="admin-form-grid">
+                <label>
+                  <span>Pendapatan desa</span>
+                  <input type="text" id="adminApbdIncome" inputmode="decimal" placeholder="Contoh: Rp 1.000.000.000" />
+                </label>
+                <label>
+                  <span>Belanja desa</span>
+                  <input type="text" id="adminApbdExpenditure" inputmode="decimal" placeholder="Contoh: Rp 950.000.000" />
+                </label>
+              </div>
+            </div>
+            <div class="admin-profile-photo">
+              <label>
+                <span>Foto profil desa</span>
+                <input type="file" id="adminProfilePhoto" accept="image/*" />
+              </label>
+              <img id="adminProfilePhotoPreview" class="admin-image-preview hidden" alt="Pratinjau foto profil desa" />
+              <button type="button" id="removeProfilePhoto" class="remove-photo hidden">Hapus foto profil</button>
+            </div>
+            <button type="button" id="saveProfileBtn" class="button button-primary">Simpan Profil</button>
+          </div>
+
+          <div class="admin-section">
+            <h3>Struktur Desa</h3>
+            <div id="structureEditor"></div>
+            <button type="button" id="addStructureBtn" class="button button-light">Tambah Struktur</button>
+          </div>
+
+          <div class="admin-section">
+            <h3>Tambah Wisata</h3>
+            <div id="destinationEditor" class="destination-editor"></div>
+            <form id="addDestinationForm">
+              <div class="admin-form-grid">
+                <label>
+                  <span>Judul wisata</span>
+                  <input type="text" id="destinationTitle" required />
+                </label>
+                <label>
+                  <span>Kategori</span>
+                  <select id="destinationCategory">
+                    <option value="religi">Wisata Religi</option>
+                    <option value="alam">Wisata Alam</option>
+                    <option value="kuliner">Wisata Kuliner</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Label</span>
+                  <input type="text" id="destinationType" placeholder="contoh: 05 / Alam" required />
+                </label>
+                <label class="full-width">
+                  <span>Deskripsi</span>
+                  <textarea id="destinationDescription" rows="3" required></textarea>
+                </label>
+                <label>
+                  <span>Tautan Google Maps (gunakan URL sematan untuk peta langsung)</span>
+                  <input type="url" id="destinationMapUrl" placeholder="https://www.google.com/maps/embed?..." />
+                </label>
+                <label>
+                  <span>Tarif masuk</span>
+                  <input type="text" id="destinationEntranceFee" placeholder="Contoh: Gratis atau Rp 10.000" />
+                </label>
+                <label>
+                  <span>Tarif parkir</span>
+                  <input type="text" id="destinationParkingFee" placeholder="Contoh: Rp 2.000" />
+                </label>
+                <label class="full-width">
+                  <span>Fasilitas (satu fasilitas per baris)</span>
+                  <textarea id="destinationFacilities" rows="3" placeholder="Contoh: Area parkir&#10;Toilet umum"></textarea>
+                </label>
+                <label class="full-width">
+                  <span>Foto wisata</span>
+                  <input type="file" id="destinationPhoto" accept="image/*" />
+                </label>
+              </div>
+              <button type="submit" class="button button-primary">Tambah Wisata</button>
+            </form>
+          </div>
+
+          <div class="admin-section">
+            <h3>Berita Desa</h3>
+            <p>Empat slot berita tersedia untuk mulai diisi. Setiap berita dapat memuat thumbnail dan isi lengkap untuk dibaca pengunjung.</p>
+            <div class="news-editor" id="newsEditor"></div>
+            <button type="button" id="addNewsBtn" class="button button-light">Tambah Berita</button>
+          </div>
+
+          <div class="admin-section">
+            <h3>Produk UMKM & Pemesanan</h3>
+            <p>Katalog produk dibagikan ke pengunjung melalui Supabase. Masuk dengan akun admin Supabase untuk mengelola produk. Nonaktifkan pendaftaran publik di Supabase Auth dan gunakan akun admin tepercaya.</p>
+            <div class="umkm-admin-auth" id="umkmAdminAuth">
+              <label>
+                <span>Email admin Supabase</span>
+                <input id="umkmAdminEmail" type="email" autocomplete="username" placeholder="admin@desa.id" />
+              </label>
+              <label>
+                <span>Kata sandi Supabase</span>
+                <input id="umkmAdminPassword" type="password" autocomplete="current-password" />
+              </label>
+              <div class="umkm-admin-auth-actions">
+                <button class="button button-primary" id="umkmAdminSignIn" type="button">Masuk pengelola produk</button>
+                <button class="button button-light" id="umkmAdminSignOut" type="button" hidden>Keluar</button>
+              </div>
+              <p class="umkm-admin-status" id="umkmAdminStatus" role="status">Memeriksa konfigurasi Supabase...</p>
+            </div>
+            <form class="umkm-product-form" id="umkmProductForm">
+              <input id="umkmProductId" type="hidden" />
+              <div class="admin-form-grid">
+                <label>
+                  <span>Nama produk</span>
+                  <input id="umkmProductName" type="text" maxlength="120" required />
+                </label>
+                <label>
+                  <span>Kategori</span>
+                  <input id="umkmProductCategory" type="text" maxlength="60" placeholder="Contoh: Makanan, kerajinan" required />
+                </label>
+                <label>
+                  <span>Harga (rupiah)</span>
+                  <input id="umkmProductPrice" type="number" min="0" step="1" inputmode="numeric" required />
+                </label>
+                <label>
+                  <span>Stok tersedia</span>
+                  <input id="umkmProductStock" type="number" min="0" step="1" inputmode="numeric" required />
+                </label>
+                <label class="full-width">
+                  <span>Deskripsi produk</span>
+                  <textarea id="umkmProductDescription" rows="4" maxlength="3000" required></textarea>
+                </label>
+                <label>
+                  <span>Nomor WhatsApp penjual (format 08... atau 62...)</span>
+                  <input id="umkmProductWhatsApp" type="tel" inputmode="tel" maxlength="20" required />
+                </label>
+                <label>
+                  <span>Informasi pengiriman/pengambilan</span>
+                  <input id="umkmProductDelivery" type="text" maxlength="240" placeholder="Contoh: Ambil di kantor desa atau tanyakan ongkir" />
+                </label>
+                <label class="full-width">
+                  <span>Foto produk</span>
+                  <input id="umkmProductImage" type="file" accept="image/*" />
+                  <small>Foto dikompres dan disimpan di Supabase Storage. Maksimal 10 MB.</small>
+                </label>
+              </div>
+              <div class="umkm-product-form-actions">
+                <button class="button button-primary" id="umkmProductSave" type="submit">Terbitkan produk</button>
+                <button class="button button-light" id="umkmProductCancel" type="button" hidden>Batal mengedit</button>
+              </div>
+            </form>
+            <div class="umkm-admin-products" id="umkmAdminProducts" aria-live="polite"></div>
+          </div>
+
+          <div class="admin-section">
+            <h3>Tambah Foto</h3>
+            <p>Pilih foto dokumentasi desa untuk ditampilkan di galeri. Foto disimpan di browser ini.</p>
+            <form id="addPhotoForm">
+              <div class="admin-form-grid">
+                <label>
+                  <span>Judul foto</span>
+                  <input type="text" id="photoTitle" required maxlength="80" />
+                </label>
+                <label>
+                  <span>Pilih foto</span>
+                  <input type="file" id="photoFile" accept="image/*" required />
+                </label>
+              </div>
+              <button type="submit" class="button button-primary">Tambah Foto</button>
+            </form>
+            <div class="admin-photo-list" id="adminPhotoList" aria-live="polite"></div>
+          </div>
+
+          <div class="admin-section">
+            <h3>Kontak & Informasi Desa</h3>
+            <p>Isi kontak yang ingin ditampilkan di bagian bawah website. Satu entri nomor atau sosial media per baris dengan format <strong>Nama | Nomor atau URL</strong>.</p>
+            <div class="admin-form-grid">
+              <label class="full-width">
+                <span>Kontak desa</span>
+                <textarea id="adminVillageContact" rows="4" placeholder="Alamat, email, atau kontak kantor desa"></textarea>
+              </label>
+              <label class="full-width">
+                <span>Nomor telepon penting</span>
+                <textarea id="adminImportantPhones" rows="4" placeholder="Kantor Desa | 0761...&#10;Puskesmas | 0761..."></textarea>
+              </label>
+              <label class="full-width">
+                <span>Sosial media desa</span>
+                <textarea id="adminSocialMedia" rows="4" placeholder="Instagram | https://instagram.com/...&#10;Facebook | https://facebook.com/..."></textarea>
+              </label>
+            </div>
+            <button type="button" id="saveVillageInfoBtn" class="button button-primary">Simpan Informasi Desa</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer"><a class="brand" href="#beranda"><span class="brand-mark">TA</span><span><strong>Tanjung Alai</strong><small>Koto Kampar XIII</small></span></a><p>Potensi desa. Cerita bersama.</p><span>© 2026 Desa Tanjung Alai</span></footer>
+    <script src="supabase-config.js"></script>
+    <script src="umkm-store.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

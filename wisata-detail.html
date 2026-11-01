@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Informasi lengkap wisata Desa Tanjung Alai." />
+    <title>Detail Wisata | Desa Tanjung Alai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="wisata-detail.css" />
+    <script src="wisata-detail.js" defer></script>
+  </head>
+  <body>
+    <header class="detail-header">
+      <a class="detail-brand" href="index.html#beranda">
+        <span class="detail-brand-mark">TA</span>
+        <span><strong>Tanjung Alai</strong><small>Koto Kampar XIII</small></span>
+      </a>
+      <a class="back-link" href="index.html#potensi">← Kembali ke potensi desa</a>
+    </header>
+    <main class="detail-main">
+      <section class="detail-hero" aria-labelledby="destinationTitle">
+        <img class="destination-photo" id="destinationPhoto" alt="" hidden />
+        <div class="destination-photo-placeholder" id="destinationPhotoPlaceholder" aria-hidden="true">TA</div>
+        <div class="detail-hero-overlay"></div>
+        <div class="detail-hero-copy">
+          <p class="detail-eyebrow" id="destinationType">Wisata Desa</p>
+          <h1 id="destinationTitle">Memuat informasi wisata...</h1>
+          <p id="destinationDescription"></p>
+        </div>
+      </section>
+      <p class="detail-notice" id="destinationNotice" role="status" hidden></p>
+      <section class="detail-information" aria-label="Informasi wisata">
+        <article class="information-card">
+          <span class="information-icon" aria-hidden="true">⌖</span>
+          <h2>Lokasi & Peta</h2>
+          <p id="mapDescription">Informasi peta belum tersedia.</p>
+          <div class="map-preview" id="mapPreview" hidden></div>
+          <a class="detail-button" id="mapLink" hidden target="_blank" rel="noopener noreferrer">Buka lokasi di Google Maps ↗</a>
+        </article>
+        <article class="information-card fee-card">
+          <span class="information-icon" aria-hidden="true">Rp</span>
+          <h2>Tarif Kunjungan</h2>
+          <dl class="fee-list">
+            <div><dt>Biaya masuk</dt><dd id="entranceFee">Belum diisi</dd></div>
+            <div><dt>Parkir</dt><dd id="parkingFee">Belum diisi</dd></div>
+          </dl>
+          <p class="fee-note">Konfirmasi tarif kepada pengelola sebelum berkunjung.</p>
+        </article>
+        <article class="information-card facilities-card">
+          <span class="information-icon" aria-hidden="true">✦</span>
+          <h2>Fasilitas</h2>
+          <ul class="facilities-list" id="facilitiesList"></ul>
+          <p class="facilities-empty" id="facilitiesEmpty">Informasi fasilitas belum tersedia.</p>
+        </article>
+      </section>
+    </main>
+    <footer class="detail-footer">
+      <a href="index.html#potensi">Desa Tanjung Alai</a>
+      <span>Informasi dapat diperbarui melalui panel admin website desa.</span>
+    </footer>
+  </body>
+</html>
